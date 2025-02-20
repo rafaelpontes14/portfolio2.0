@@ -43,7 +43,7 @@ function App() {
       title: "Responsive Delivery", 
       description: "Desenvolvimento de uma landing page moderna para serviços de delivery, implementando design responsivo e otimizado para todos os dispositivos. O projeto inclui animações fluidas e navegação intuitiva para melhor experiência do usuário.",
       tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      image: "./img/responsive-delivery-app.png",
+      image: "/img/delivery.png",
       projectUrl: "https://github.com/rafaelpontes14/Website-Delivery",
       demoUrl: "https://responsive-delivery.netlify.app/"
     },
@@ -51,7 +51,7 @@ function App() {
       title: "Responsive Halloween Website", 
       description: "Site temático desenvolvido com foco em performance e experiência do usuário. Implementação de animações personalizadas, sistema de navegação dinâmico e design responsivo. O projeto utiliza técnicas modernas de CSS para criar efeitos visuais envolventes mantendo a otimização.",
       tech: ['HTML', 'CSS', 'JavaScript'],
-      image: "./img/halloween.png",
+      image: "/img/halloween.png",
       projectUrl: "https://github.com/rafaelpontes14/Responsive-Halloween-Website?tab=readme-ov-file",
       demoUrl: "https://responsive-halloween.netlify.app/#"
     },
@@ -59,7 +59,7 @@ function App() {
       title: "Mario Jump",
       description: "Desenvolvimento de um jogo web interativo inspirado no clássico Mario Bros. Implementação de sistema de colisão, pontuação em tempo real e controles responsivos. O projeto utiliza Canvas API para renderização e requestAnimationFrame para otimização de performance.",
       tech: ['HTML', 'CSS', 'JavaScript'],
-      image: "./img/mario.png",
+      image: "/img/mario.png",
       projectUrl: "https://github.com/rafaelpontes14/Mario-Jump",
       demoUrl: "https://mariojuump.netlify.app/"
     },
@@ -67,7 +67,7 @@ function App() {
       title: "Genius Game", 
       description: "Recriação do jogo Genius com foco em acessibilidade e usabilidade. Implementação de sistema de pontuação, diferentes níveis de dificuldade e feedback sonoro/visual. O projeto utiliza algoritmos de randomização e gerenciamento de estado para controle do fluxo do jogo.",
       tech: ['HTML', 'CSS', 'JavaScript'],
-      image: "./img/genius.png",
+      image: "/img/genius.png",
       projectUrl: "https://github.com/rafaelpontes14/Genius",
       demoUrl: "https://game-geniuss.netlify.app/"
     }
@@ -174,7 +174,7 @@ function App() {
             <div className="absolute -inset-1 from-zinc-400 to-zinc-600 rounded-full opacity-75 group-hover:opacity-100 transition-opacity blur"></div>
             <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden ring-2 ring-zinc-400 group-hover:ring-zinc-300 transition-all duration-300 transform group-hover:scale-105">
               <img 
-                src="./img/e602759a-6e53-4609-aaa0-cc7c7a762232.jpg" 
+                src="/img/e602759a-6e53-4609-aaa0-cc7c7a762232.jpg" 
                 alt="Rafael Pontes"
                 className="w-full h-full object-cover"
               />
