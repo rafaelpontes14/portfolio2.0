@@ -5,6 +5,7 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,6 +90,20 @@ function App() {
     { id: 'projects', label: 'Projetos' },
     { id: 'contact', label: 'Contato' }
   ];
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    
+    // Show success message
+    setShowSuccessMessage(true);
+    
+    // Hide message after 5 seconds
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+      form.submit();
+    }, 3000);
+  };
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 relative">
@@ -450,6 +465,7 @@ function App() {
           
           <div className="bg-zinc-900/50 backdrop-blur-lg rounded-2xl p-6 md:p-8 shadow-xl border border-zinc-800 hover:border-zinc-700 transition-colors">
             <form 
+              onSubmit={handleSubmit}
               action="https://formsubmit.co/rafafpontes@gmail.com" 
               method="POST"
               className="space-y-6"
@@ -510,6 +526,13 @@ function App() {
                 Enviar Mensagem
                 <Send size={18} className="transform -rotate-40 group-hover:translate-x-1 transition-transform" />
               </button>
+
+              {/* Success Message */}
+              {showSuccessMessage && (
+                <div className="fixed bottom-4 right-4 bg-green-500/90 text-white px-6 py-3 rounded-lg shadow-lg backdrop-blur-sm animate-fadeIn">
+                  Mensagem enviada com sucesso! 🚀
+                </div>
+              )}
             </form>
           </div>
 
