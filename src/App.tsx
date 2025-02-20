@@ -43,7 +43,7 @@ function App() {
       title: "Responsive Delivery", 
       description: "Desenvolvimento de uma landing page moderna para serviços de delivery, implementando design responsivo e otimizado para todos os dispositivos. O projeto inclui animações fluidas e navegação intuitiva para melhor experiência do usuário.",
       tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      image: "/img/delivery.png",
+      image: "./img/delivery.png",
       projectUrl: "https://github.com/rafaelpontes14/Website-Delivery",
       demoUrl: "https://responsive-delivery.netlify.app/"
     },
