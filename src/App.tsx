@@ -454,7 +454,7 @@ function App() {
               method="POST"
               className="space-y-6"
             >
-              <input type="hidden" name="_next" value="https://rafaelpontes.vercel.app/" />
+              <input type="hidden" name="_next" value="https://rafafpdev.netlify.app/" />
               <input type="hidden" name="_subject" value="Novo contato do portfólio!" />
               <input type="hidden" name="_captcha" value="false" />
 
