@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Instagram, ChevronDown, ExternalLink, ArrowRight, Code2, Server, PenTool as Tool, Briefcase, GraduationCap, Coffee, Send, User, AtSign, MessageSquare, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Github, Linkedin, Instagram, ChevronDown, ExternalLink, ArrowRight, Code2, Server, PenTool as Tool, Briefcase, GraduationCap, Coffee, Send, User, AtSign, MessageSquare, ChevronLeft, ChevronRight, Download } from 'lucide-react';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -204,24 +204,34 @@ function App() {
           <p className="text-base md:text-lg max-w-2xl mx-auto text-zinc-400 px-4 animate-slideUp delay-100">
             Transformando ideias em soluções digitais com paixão pela tecnologia e inovação
           </p>
-          <div className="flex gap-4 justify-center pt-4 animate-slideUp delay-200">
-            <a href="https://github.com/rafaelpontes14?tab=overview&from=2024-12-01&to=2024-12-31" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               className="p-2 hover:text-zinc-300 transition-all duration-300 hover:scale-110">
-              <Github className="w-6 h-6 md:w-7 md:h-7" />
-            </a>
-            <a href="https://www.linkedin.com/in/rafael-fernandes-pontes-79626a1b7/" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="p-2 hover:text-zinc-300 transition-all duration-300 hover:scale-110">
-              <Linkedin className="w-6 h-6 md:w-7 md:h-7" />
-            </a>
-            <a href="https://www.instagram.com/rafaelpontesfs/" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="p-2 hover:text-zinc-300 transition-all duration-300 hover:scale-110">
-              <Instagram className="w-6 h-6 md:w-7 md:h-7" />
+          <div className="flex flex-col items-center gap-6 pt-4 animate-slideUp delay-200">
+            <div className="flex gap-4 justify-center">
+              <a href="https://github.com/rafaelpontes14?tab=overview&from=2024-12-01&to=2024-12-31" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 className="p-2 hover:text-zinc-300 transition-all duration-300 hover:scale-110">
+                <Github className="w-6 h-6 md:w-7 md:h-7" />
+              </a>
+              <a href="https://www.linkedin.com/in/rafael-fernandes-pontes-79626a1b7/" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="p-2 hover:text-zinc-300 transition-all duration-300 hover:scale-110">
+                <Linkedin className="w-6 h-6 md:w-7 md:h-7" />
+              </a>
+              <a href="https://www.instagram.com/rafaelpontesfs/" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="p-2 hover:text-zinc-300 transition-all duration-300 hover:scale-110">
+                <Instagram className="w-6 h-6 md:w-7 md:h-7" />
+              </a>
+            </div>
+            <a 
+              href="/curriculo_RafaelPontes.pdf" 
+              download
+              className="flex items-center gap-2 px-6 py-3 bg-zinc-800 rounded-lg text-zinc-100 hover:bg-zinc-700 transition-all duration-300 transform hover:scale-105 group border border-zinc-700"
+            >
+              <span>Baixar CV</span>
+              <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </a>
           </div>
         </div>
