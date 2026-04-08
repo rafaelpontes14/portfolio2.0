@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Instagram, ChevronDown, ExternalLink, ArrowRight, Code2, Server, PenTool as Tool, Briefcase, GraduationCap, Coffee, Send, User, AtSign, MessageSquare, ChevronLeft, ChevronRight, Download } from 'lucide-react';
+import { Github, Linkedin, Instagram, ChevronDown, ExternalLink, ArrowRight, Code2, Server, PenTool as Tool, Briefcase, Coffee, Send, User, AtSign, MessageSquare, ChevronLeft, ChevronRight, Download } from 'lucide-react';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -226,7 +226,7 @@ function App() {
               </a>
             </div>
             <a 
-              href="/curriculo_RafaelPontes.pdf" 
+              href="/Rafael_Fernandes_FullStack.pdf" 
               download
               className="flex items-center gap-2 px-6 py-3 bg-zinc-800 rounded-lg text-zinc-100 hover:bg-zinc-700 transition-all duration-300 transform hover:scale-105 group border border-zinc-700"
             >
@@ -250,44 +250,18 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center text-zinc-100">
             Sobre Mim
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-zinc-900/50 p-6 rounded-xl hover:bg-zinc-900 transition-all duration-300 group hover:transform hover:scale-105">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-zinc-800 group-hover:scale-110 transition-transform">
-                  <Briefcase className="w-6 h-6" />
+          <div className="flex justify-center">
+            <div className="w-full max-w-3xl bg-zinc-900/60 p-10 rounded-[2rem] border border-zinc-800 shadow-2xl shadow-black/20 backdrop-blur-xl transition-all duration-300 hover:scale-[1.01]">
+              <div className="flex flex-col items-center text-center gap-6">
+                <div>
+                  <p className="mt-4 text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
+                    Desenvolvedor Full Stack em formação com experiência prática em projetos web e mobile.
+                    Forte atuação em desenvolvimento de interfaces responsivas, integração com APIs REST e
+                    banco de dados. Conhecimento em metodologias ágeis, versionamento com Git e boas
+                    práticas como SOLID e MVC.
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold group-hover:text-zinc-100 transition-colors">Experiência</h3>
               </div>
-              <p className="text-zinc-400 group-hover:text-zinc-300 transition-colors">
-                Desenvolvedor full stack apaixonado por criar experiências digitais excepcionais. 
-                Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam.
-              </p>
-            </div>
-
-            <div className="bg-zinc-900/50 p-6 rounded-xl hover:bg-zinc-900 transition-all duration-300 group hover:transform hover:scale-105">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-zinc-800 group-hover:scale-110 transition-transform">
-                  <GraduationCap className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-bold group-hover:text-zinc-100 transition-colors">Formação</h3>
-              </div>
-              <p className="text-zinc-400 group-hover:text-zinc-300 transition-colors">
-                Atualmente, estou focado em expandir meus conhecimentos em desenvolvimento web moderno,
-                trabalhando com as mais recentes tecnologias do mercado.
-              </p>
-            </div>
-
-            <div className="bg-zinc-900/50 p-6 rounded-xl hover:bg-zinc-900 transition-all duration-300 group md:col-span-2 lg:col-span-1 hover:transform hover:scale-105">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-zinc-800 group-hover:scale-110 transition-transform">
-                  <Coffee className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-bold group-hover:text-zinc-100 transition-colors">Interesses</h3>
-              </div>
-              <p className="text-zinc-400 group-hover:text-zinc-300 transition-colors">
-                Além do desenvolvimento, sou entusiasta de novas tecnologias, apaixonado por resolver 
-                problemas complexos e criar soluções inovadoras.
-              </p>
             </div>
           </div>
         </div>
@@ -302,53 +276,50 @@ function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SkillCategory 
-              title="Front-end" 
+              title="Linguagens" 
               icon={<Code2 className="w-6 h-6" />}
               skills={[
-                'React.js',
+                'JavaScript',
                 'TypeScript',
-                'Tailwind CSS',
-                'Next.js',
-                'HTML/CSS',
-                'JavaScript'
+                'Python',
+                'Java',
+                'Apex'
               ]} 
               gradient="bg-zinc-800"
             />
             
             <SkillCategory 
-              title="Back-end" 
+              title="Banco de Dados" 
               icon={<Server className="w-6 h-6" />}
               skills={[
-                'Node.js',
-                'Python',
-                'Java'
+                'MySQL',
+                'PostgreSQL',
+                'MongoDB',
+                'Supabase'
+              ]} 
+              gradient="bg-zinc-800"
+            />
+            
+            <SkillCategory 
+              title="Frameworks" 
+              icon={<Tool className="w-6 h-6" />}
+              skills={[
+                'React',
+                'Next.js',
+                'TailwindCSS',
+                'SASS'
               ]} 
               gradient="bg-zinc-800"
             />
             
             <SkillCategory 
               title="Ferramentas" 
-              icon={<Tool className="w-6 h-6" />}
-              skills={[
-                'Git',
-                'Docker',
-                'VS Code',
-                'Figma',
-                'Linux (Ubuntu)'
-              ]} 
-              gradient="bg-zinc-800"
-            />
-            
-            <SkillCategory 
-              title="Soft Skills" 
               icon={<User className="w-6 h-6" />}
               skills={[
-                'Trabalho em Equipe',
-                'Comunicação',
-                'Organização',
-                'Proatividade',
-                'Adaptabilidade',
-                'Resolução de Problemas'
+                'Git',
+                'GitHub',
+                'Linux (Ubuntu)',
+                'Windows'
               ]} 
               gradient="bg-zinc-800"
             />
@@ -580,7 +551,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-6 text-center text-zinc-400">
-        <p className="hover:text-zinc-100 transition-colors">Feito com ❤️ por Rafael Pontes</p>
+        <p className="hover:text-zinc-100 transition-colors">Feito por Rafael Pontes</p>
       </footer>
     </div>
   );
